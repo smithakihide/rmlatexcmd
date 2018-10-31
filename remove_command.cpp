@@ -31,5 +31,19 @@ int main(int32_t argc, char* argv[])
     fs.read(data.data(), filesize);
     fs.close();
 
-    
+    class CCmd{
+        public:
+        CCmd(std::vector<char>, )
+        std::vector<char> s_cmd;
+        std::function<void()> f_cmd;
+        int64_t c_cmd;
+    }
+
+    std::vector<CCmd> vCmd;
+
+    for(int64_t i =0;i<data.size();i++)
+    {
+
+        if(data[i] == )
+    }
 }

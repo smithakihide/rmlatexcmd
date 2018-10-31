@@ -1,4 +1,17 @@
+\documentclass{article}
+\usepackage{amsfonts, amsmath, amssymb}
+\usepackage{color}
 
+\newcommand{\CR}[1]{\textcolor{red}{#1}}
+\newcommand{\CB}[1]{\textcolor{blue}{#1}}
+\begin{document}
 
-aaa
-\newcommand{\CR}{}
+    \begin{section}{test section}
+        this is a section to test the ability of rmlatexcmd which should be able to remove all specified commands. for example there is a command in a section \CR{like this}, which emphasizes this text using red color. such this notation is used frequently to note someone else another user changed that point. there would be so many emphasized text sometimes. Then we want to remove all commands at once.
+
+        There might be also nested commands \CR{like \CB{this}}. We will create rmlatexcmd so that it can remove those nested command without breaking its other structure.
+    \end{section}
+
+    \input{test2.tex}
+
+\end{document}
